@@ -6,7 +6,7 @@ body {
 
 .cover{
   height: 400px;
-  background-image:url(../img/portadaw.jpg);
+  background-image:url(/img/portadaw.jpg);
   color: white;
   background-size: cover;
   background-position :center;
