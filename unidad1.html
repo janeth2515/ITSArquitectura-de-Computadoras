@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Arquitectura de computadoras</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Inicio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="unidad1.html">Unidad 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="unidad2.html">Unidad 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="unidad3.html">Unidad 3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="unidad4.html">Unidad 4</a>
+          </li>
+        </ul>
+      </nav>
+      <div
+        class="cover d-flex justify-content-center align-items-center flex-column"
+      >
+        <h1>
+          Arquitectura de computadoras
+        </h1>
+        <p>
+          Unidad 1 Arquitectura de cómputo
+        </p>
+      </div>
+    </header>
+  </body>
+  <section>
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">1.1 Modelos de arquitecturas de cómputo.</p>
+      </h2>
+      <p>
+        <b
+          >Von Neumann describió el fundamento de todo ordenador electrónico con
+          programas almacenados. Describía, a diferencia de como pasaba
+          anteriormente, cómo podía funcionar un ordenador con sus unidades
+          conectadas permanentemente y su funcionamiento estuviera coordinado
+          desde la unidad de control (la CPU). Aunque la tecnología ha avanzado
+          mucho y aumentado la complejidad de la arquitectura inicial, la base
+          de su funcionamiento es la misma y probablemente lo seguirá siendo
+          durante mucho tiempo.
+        </b>
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">1.1.1 Arquitecturas clásicas</p>
+      </h2>
+      <p>
+        <b
+          >Estas arquitecturas se desarrollaron en las primeras computadoras
+          electromecánicas y de tubos de vacío. Hay dos arquitecturas distintas
+          relacionadas con el uso y distribución de la memoria: Arquitectura de
+          von Neumman y Arquitectura Harvard.
+        </b>
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">Arquitectura de von Neumann:</p>
+      </h2>
+      <p>
+        <b
+          >Tradicionalmente los sistemas con microprocesadores se basan en esta
+          arquitectura, en la cual la unidad central de proceso (CPU), está
+          conectada a una memoria principal única (casi siempre sólo RAM) donde
+          se guardan las instrucciones del programa y los datos. A dicha memoria
+          se accede a través de un sistema de buses único (control, direcciones
+          y datos).
+        </b>
+      </p>
+      <div align="center">
+        <img src="https://cdn.glitch.com/4c8cc7d1-9617-4086-a6d3-711095e7111d%2Fvon-newn.png?v=1610688324518">
+      </div>
+      
+    </div>
+  </section>
+
+  <section>
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">Arquitectura Harvard:</p>
+      </h2>
+      <p>
+        <b
+          >Este modelo, que utilizan los Microcontroladores PIC, tiene la unidad
+          central de proceso (CPU) conectada a dos memorias (una con las
+          instrucciones y otra con los datos) por medio de dos buses diferentes.
+          Una de las memorias contiene solamente las instrucciones del programa
+          (Memoria de Programa), y la otra sólo almacena datos (Memoria de
+          Datos). Ambos buses son totalmente independientes lo que permite que
+          la CPU pueda acceder de forma independiente y simultánea a la memoria
+          de datos y a la de instrucciones. Como los buses son independientes
+          estos pueden tener distintos contenidos en la misma dirección y
+          también distinta longitud. Tambien la longitud de los datos y las
+          instrucciones puede ser distinta, lo que optimiza el uso de la memoria
+          en general.
+        </b>
+      </p>
+    </div>
+    <div align="center">
+        <img src="https://cdn.glitch.com/4c8cc7d1-9617-4086-a6d3-711095e7111d%2FHarvard.png?v=1610723090959">
+      </div>
+  </section>
+
+  <section>
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">1.1.2 Arquitecturas segmentadas</p>
+      </h2>
+      <p>
+        <b
+          >ELas arquitecturas segmentadas o con segmentación del cauce buscan
+          mejorar el desempeño realizando paralelamente varias etapas del ciclo
+          de instrucción al mismo tiempo. Generalidades Un ciclo de instrucción
+          (también llamado ciclo de fetch-and-execute o ciclo de
+          fetch-decode-execute en inglés) es el período que tarda la unidad
+          central de proceso (CPU) en ejecutar una instrucción de lenguaje
+          máquina. Comprende una secuencia de acciones determinada que debe
+          llevar a cabo la CPU para ejecutar cada instrucción en un programa.
+          Cada instrucción del juego de instrucciones de una CPU puede requerir
+          diferente número de ciclos de instrucción para su ejecución. Un ciclo
+          de instrucción está formado por uno o más ciclos máquina.
+        </b>
+      </p>
+    </div>
+    <div align="center">
+        <img src="https://cdn.glitch.com/4c8cc7d1-9617-4086-a6d3-711095e7111d%2Fsegmentada.png?v=1610725007088">
+      </div>
+    
+  </section>
+
+
+  <section>
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">1.1.3 Arquitecturas de multiprocesamiento</p>
+      </h2>
+      <p>
+        <b
+          >Cuando se desea incrementar el desempeño más allá de lo que permite
+          la técnica de segmentación del cauce (límite teórico de una
+          instrucción por ciclo de reloj), se requiere utilizar más de un
+          procesador para la ejecución del programa de aplicación. El alto
+          rendimiento y bajo coste de los microprocesadores inspiraron un
+          renovado interés en los multiprocesadores en los años ochenta. Varios
+          microprocesadores se pueden colocar sobre un bus común porque: son
+          mucho más pequeños que los procesadores multichip, las caches pueden
+          disminuir el tráfico del bus y los protocolos de coherencia pueden
+          mantener caché y memoria consistente. El tráfico por procesador y el
+          ancho de banda del bus determinan el número de procesadores en dicho
+          multiprocesador. Un reloj del sistema reside en la tarjeta madre. Éste
+          envía una señal a todos los componentes de la computadora en ritmo,
+          como un metrónomo. Generalmente, este ritmo se genera como una onda
+          cuadrada, como la siguiente: Cada onda en esta señal mide un ciclo de
+          reloj. Si el reloj del sistema funciona a 100MHZ, esto significa que
+          hay 100 millones de ciclos del reloj en un segundo. Cada acción en la
+          computadora se marca con un tiempo mediante estos ciclos del reloj y
+          para realizarse, cada acción toma cierto número de ciclos del reloj.
+          Cuando se procesa una solicitud de la memoria, por ejemplo, el
+          controlador de la memoria puede informar al procesador que los datos
+          requeridos llegarán en seis ciclos de reloj. Es posible que el CPU y
+          otros dispositivos funcionen más rápido o más lento que el reloj del
+          sistema.
+        </b>
+      </p>
+    </div>
+    <div align="center"> 
+      <img src = "https://cdn.glitch.com/4c8cc7d1-9617-4086-a6d3-711095e7111d%2Fmultiprosesamiento.png?v=1610724990021">
+    </div>
+  </section>
+
+  <section>
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">1.2 Análisis de los componentes.</p>
+      </h2>
+      <p>
+        <b
+          >Los avances y progresos en la tecnología de semiconductores, han
+          reducido las diferencias en las velocidades de procesamiento de los
+          microprocesadores con las velocidades de las memorias, lo que ha
+          repercutido en nuevas tecnologías en el desarrollo de
+          microprocesadores. Hay quienes consideran que en breve los
+          microprocesadores RISC (reduced instruction set computer) sustituirán
+          a los CISC (complex instruction set computer), pero existe el hecho
+          que los microprocesadores CISC tienen un mercado de software muy
+          difundido, aunque tampoco tendrán ya que establecer nuevas familias en
+          comparación con el desarrollo de nuevos proyectos con tecnología RISC.
+        </b>
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">Arquitecturas CISC</p>
+      </h2>
+      <p>
+        <b
+          >La microprogramación es una característica importante y esencial de
+          casi todas las arquítecturas CISC. La microprogramación significa que
+          cada instrucción de máquina es interpretada por un microprograma
+          localizado en una memoria en el circuito integrado del procesador. En
+          la década de los sesentas la micropramación, por sus características,
+          era la técnica más apropiada para las tecnologías de memorias
+          existentes en esa época y permitía desarrollar también procesadores
+          con compatibilidad ascendente. En consecuencia, los procesadores se
+          dotaron de poderosos conjuntos de instrucciones. Las instrucciones
+          compuestas son decodificadas internamente y ejecutadas con una serie
+          de microinstrucciones almacenadas en una ROM interna. Para esto se
+          requieren de varios ciclos de reloj (al menos uno por
+          microinstrucción).
+        </b>
+      </p>
+    </div>
+  </section>
+  <section>
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">Arquitecturas RISC</p>
+      </h2>
+      <p>
+        <b
+          >Buscando aumentar la velocidad del procesamiento se descubrió en base
+          a experimentos que, con una determinada arquitectura de base, la
+          ejecución de programas compilados directamente con microinstrucciones
+          y residentes en memoria externa al circuito integrado resultaban ser
+          más eficientes, gracias a que el tiempo de acceso de las memorias se
+          fue decrementando conforme se mejoraba su tecnología de encapsulado.
+          Debido a que se tiene un conjunto de instrucciones simplificado, éstas
+          se pueden implantar por hardware directamente en la CPU, lo cual
+          elimina el microcódigo y la necesidad de decodificar instrucciones
+          complejas. En investigaciones hechas a mediados de la década de los
+          setentas, con respecto a la frecuencia de utilización de una
+          instrucción en un CISC y al tiempo para su ejecución, se observó lo
+          siguiente:
+        </b>
+      </p>
+      <li class="list-group-item">
+        <b
+          >Alrededor del 20% de las instrucciones ocupa el 80% del tiempo total
+          de ejecución de un programa.
+        </b>
+      </li>
+      <li class="list-group-item">
+        <b
+          >- Existen secuencias de instrucciones simples que obtienen el mismo
+          resultado que secuencias complejas predeterminadas, pero requieren
+          tiempos de ejecución más cortos. Las características esenciales de una
+          arquitectura RISC pueden resumirse como sigue: Estos microprocesadores
+          siguen tomando como base el esquema moderno de Von Neumann.
+        </b>
+      </li>
+      <p>
+        Reducción del conjunto de instrucciones a instrucciones básicas simples,
+        con la que pueden implantarse todas las operaciones complejas.
+        Arquitectura del tipo load-store (carga y almacena). Las únicas
+        instrucciones que tienen acceso a la memoria son 'load' y 'store';
+        registro a registro, con un menor número de acceso a memoria. Casi todas
+        las instrucciones pueden ejecutarse dentro de un ciclo de reloj. Con un
+        control implantado por hardware (con un diseño del tipo load-store),
+        casi todas las instrucciones se pueden ejecutar cada ciclo de reloj,
+        base importante para la reorganización de la ejecución de instrucciones
+        por medio de un compilador.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">1.2.1.1 Unidad Central de Procesamiento.</p>
+      </h2>
+      <p>
+        <b
+          >A la CPU se la suele llamar coloquialmente como microprocesador o
+          simplemente procesador, y puedes considerarla como el cerebro de
+          cualquier dispositivo. Se encarga de procesar todas las instrucciones
+          del dispositivo, leyendo las órdenes y requisitos del sistema
+          operativo, así como las instrucciones de cada uno de los componentes y
+          las aplicaciones. Así pues, igual que el cerebro, la CPU es la que se
+          encarga de que todo funcione correctamente, y de interpretar todo lo
+          que quiere hacer el sistema operativo o los componentes, estableciendo
+          las conexiones y realizando todos los cálculos precisos para que
+          funcione. Cuanto más potente sea el procesador, más rápido podrá hacer
+          las operaciones y más rápido funcionará tu dispositivo en general.
+        </b>
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">1.2.1.2 Unidad Aritmética lógica.</p>
+      </h2>
+      <p>
+        <b
+          >La Unidad aritmético-lógica (ALU por sus siglas en inglés: Arithmetic
+          Logic Unit) es un contador digital capaz de realizar las operaciones
+          aritméticas y lógicas entre los datos de un circuito; suma, resta,
+          multiplica y divide, así como establece comparaciones lógicas a través
+          de los condicionales lógicos “si”, “no”, y, “o”. Desde los circuitos
+          más simples, como relojes y calculadoras, hasta complejos circuitos,
+          como los microchips actuales, todos incluyen al menos una Unidad
+          aritmético-lógica, que varía su poder y complejidad según su
+          finalidad. Las computadoras más modernas, que incluyen procesadores de
+          múltiples núcleos, incorporan a su vez múltiples dispositivos ALU, con
+          una diagramación compleja y potente.
+        </b>
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">1.2.1.3 Registros</p>
+      </h2>
+      <p>
+        <b
+          >Un registro es una memoria que esta ubicada en el procesador y se
+          encuentra en el nivel más alto en la jerarquía de memoria, por lo
+          tanto tiene una alta velocidad pero con poca capacidad para almacenar
+          datos que va desde los 4 bits hasta los 64 bits dependiendo del
+          procesador que se utilice. Los datos que almacena son los que se usan
+          frecuentemente
+        </b>
+      </p>
+      <div class="conteiner mt-5 nt-5">
+        <h2 class="title">
+          <p style="color:#3C75C8">Registros GPR:</p>
+        </h2>
+        <p>
+          Registros de propósito general (en inglés GPRs o General Purpose
+          Registers), en arquitectura de ordenadores, un registro es una memoria
+          de alta velocidad y poca capacidad, integrada en el microprocesador.
+        </p>
+        <li class="list-group-item">
+          <b
+            >AX, AH, AL (Acumulador): a menudo conserva el resultado temporal
+            después de una operación aritmética o lógica.</b
+          >
+        </li>
+        <li class="list-group-item">
+          <b
+            >BX, BH, BL (Base): Se utiliza para guardar la dirección base de
+            listas de datos en la memoria.</b
+          >
+        </li>
+        <li class="list-group-item">
+          <b
+            >CX, CH, CL (Contador): Contiene el conteo para ciertas
+            instrucciones de corrimientos y rotaciones, de iteraciones en el
+            ciclo loop y operaciones repetidas de cadenas.</b
+          >
+        </li>
+        <li class="list-group-item">
+          <b
+            >DX, DH, DL (Datos): Contiene la parte más significativa de un
+            producto después de una multiplicación; la parte más significativa
+            del dividendo antes de la división.</b
+          >
+        </li>
+      </div>
+    </div>
+
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">Registros de control</p>
+      </h2>
+      <p>
+        Se utilizan para controlar las operaciones del procesador, la mayor
+        parte de estos registros no son visibles al usuario y algunos pueden ser
+        accesibles a las instrucciones de maquina ejecutadas en un modo de
+        control. Los registros utilizados son los siguientes: Registro de
+        direcciones de memoria (MAR), el cual contiene la dirección en donde se
+        efectuará la próxima lectura o escritura de datos. El numero de
+        direcciones depende del tamaño de la MAR. Registro de datos de memoria
+        (MBR), contiene los datos que van a ser escritos en la memoria o los que
+        fueron leídos en ella. Registro de direcciones de entrada y salida (I/O
+        AR), especifica al dispositivo ya sea de entrada o salida. Registro de
+        datos de entrada y salida (I/O BR), es una área temporal en donde se
+        lleva a cabo el intercambio de datos entre el procesador y el
+        dispositivo de entrada y salida que esta especificado en IOAR. Registro
+        de instrucciones (IR), contiene la dirección de la siguiente instrucción
+        que se va a ejecutar. Palabras de estado del programa (PSW), contiene
+        códigos de condición junto con otras informaciones de estado como el
+        signo, acarro, desbordamiento, entre otras.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">1.2.1.4 Buses.</p>
+      </h2>
+      <p>
+        En arquitectura de computadores, el bus es un sistema digital que
+        transfiere datos entre los componentes de un ordenador o entre
+        ordenadores. Está formado por cables o pistas en un circuito impreso,
+        dispositivos como resistencias y condensadores además de circuitos
+        integrados. En los primeros computadores electrónicos, todos los buses
+        eran de tipo paralelo, de manera que la comunicación entre las partes
+        del computador se hacía por medio de cintas o muchas pistas en el
+        circuito impreso, en los cuales cada conductor tiene una función fija y
+        la conexión es sencilla requiriendo únicamente puertos de entrada y de
+        salida para cada dispositivo.
+      </p>
+    </div>
+    <div align = "center">
+      <img src ="https://cdn.glitch.com/4c8cc7d1-9617-4086-a6d3-711095e7111d%2Fbus.png?v=1610724957242">
+      
+    </div>
+  </section>
+
+  <section>
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">Memoria</p>
+      </h2>
+      <p>
+        La memoria de acceso aleatorio (Random Access Memory, RAM) se utiliza
+        como memoria de trabajo de computadoras para el sistema operativo, los
+        programas y la mayor parte del software. En la RAM se cargan todas las
+        instrucciones que ejecutan la unidad central de procesamiento
+        (procesador) y otras unidades de cómputo. Se denominan «de acceso
+        aleatorio» porque se puede leer o escribir en una posición de memoria
+        con un tiempo de espera igual para cualquier posición, no siendo
+        necesario seguir un orden para acceder (acceso secuencial) a la
+        información de la manera más rápida posible. Durante el encendido de la
+        computadora, la rutina POST verifica que los módulos de RAM estén
+        conectados de manera correcta. En el caso que no existan o no se
+        detecten los módulos, la mayoría de tarjetas madres emiten una serie de
+        sonidos que indican la ausencia de memoria principal. Terminado ese
+        proceso, la memoria BIOS puede realizar un test básico sobre la memoria
+        RAM indicando fallos mayores en la misma.
+      </p>
+    </div>
+
+    <div class="col-md-12" align = "center">
+      <h2 class="title">
+        <p style="color:#3C75C8">Resumen unidad 1</p>
+      </h2>
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://cdn.glitch.com/4c8cc7d1-9617-4086-a6d3-711095e7111d%2FUnidad1ArquitecturaDeComputo.mp4?v=1610693838865"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen=""
+      ></iframe>
+    </div>
+  </section>
+</html>

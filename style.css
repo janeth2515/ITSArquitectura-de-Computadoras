@@ -1,0 +1,17 @@
+/* CSS files add styling rules to your content */
+
+body {
+  margin: 2em;
+}
+
+.cover{
+  height: 400px;
+  background-image:url(../img/portadaw.jpg);
+  color: white;
+  background-size: cover;
+  background-position :center;
+  background-color:rgba(0,0,0,.5);
+  background-blend-mode: darken;
+  
+}
+

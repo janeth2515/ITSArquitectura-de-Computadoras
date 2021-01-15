@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Arquitectura de computadoras</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Inicio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="unidad1.html">Unidad 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="unidad2.html">Unidad 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="unidad3.html">Unidad 3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="unidad4.html">Unidad 4</a>
+          </li>
+        </ul>
+      </nav>
+      <div
+        class="cover d-flex justify-content-center align-items-center flex-column"
+      >
+        <h1>
+          Arquitectura de computadoras
+        </h1>
+        <p>
+          Unidad 2 Estructura y Funcionamiento de la Unidad Central de
+          Procesamiento
+        </p>
+      </div>
+    </header>
+  </body>
+  <section>
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">2.1 Organización del procesador.</p>
+      </h2>
+      <p>
+        La Unidad de Procesamiento (CPU) controla el funcionamiento del
+        computador y lleva a cabo sus funciones de procesamiento de datos.
+        Frecuentemente se le llama procesador. Un procesador, incluye tanto
+        registros visibles por el usuario como registros de control/estado. Los
+        registros visibles por el usuario pueden ser de uso general o tener una
+        utilidad especial, mientras que los registros de control y estado se
+        usan para controlar el funcionamiento del procesador, un claro ejemplo
+        es el contador de programa. Lleva a cabo una gran variedad de:
+      </p>
+      <li class="list-group-item"><b> Cálculos</b></li>
+      <li class="list-group-item"><b>Comparaciones numéricas</b></li>
+      <li class="list-group-item">
+        <b
+          >Transferencias de datos como respuesta a las peticiones de los
+          programas que están siendo ejecutados en memoria.</b
+        >
+      </li>
+    </div>
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">2.2 Estructura de registros.</p>
+      </h2>
+      <p>
+        Se emplean para controlar las instrucciones en ejecución, manejar
+        direccionamiento de memoria y propiciar la capacidad aritmética. Los
+        registros vienen de tres tipos: datos, direcciones e índice, que tiene
+        lugar en casi todos los aspectos de la operación del CPU. El tamaño de
+        un registro depende del CPU; los más simples tienen registros que
+        aceptan 8 o 16 bits de datos y los más complejos tienen registros de 32,
+        48 o 64 bits.
+      </p>
+    </div>
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">Registros de datos</p>
+      </h2>
+      <p>
+        Un CPU puede funcionar con datos en uno de tres modos: entre dos
+        registros, entre registros y una ubicación de Memoria de acceso al azar
+        (RAM - Random-Access Memory) y entre dos ubicaciones RAM. Como el CPU
+        está conectado directamente a los registros, las operaciones que
+        implican dos registros son las más rápidas; las que se dan entre
+        ubicaciones RAM son las más lentas. Es decir, junta dos registros, añade
+        un registro a una ubicación RAM, o añade dos ubicaciones RAM.
+      </p>
+    </div>
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">Registros de direcciones</p>
+      </h2>
+      <p>
+        Para que un CPU pueda almacenar y recuperar datos en RAM, debe tener la
+        dirección de la memoria de la información. Esas operaciones que implican
+        RAM usan registros de dirección de memoria. EL CPU no realiza aritmética
+        en estos registros; en cambio, los usa para ubicar datos que necesita.
+      </p>
+    </div>
+
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">2.3 El ciclo de instrucción.</p>
+      </h2>
+      <p>
+        Un ciclo de instrucción incluye los siguientes subciclos:
+      </p>
+      <li class="list-group-item">
+        Captación: llevar la siguiente instrucción de la memoria al procesador.
+      </li>
+      <li class="list-group-item">
+        Ejecución: interpretar el código de operación y llevar a cabo la
+        operación indicada.
+      </li>
+      <li class="list-group-item">
+        Interrupción: si las interrupciones están habilitadas y ha ocurrido una
+        interrupción, guardar el estado del proceso actual y atender la
+        interrupción.
+      </li>
+      <p>
+        La ejecución de una instrucción puede involucrar a uno o más operandos
+        en memoria, cada uno de los cuales requiere un acceso a memoria. Además,
+        si se usa direccionamiento indirecto serán necesarios accesos a memoria
+        adicionales. Podemos considerar la captación de direcciones indirectas
+        como un subciclo de instrucción más. La principal línea de actividad
+        consiste en alternar las actividades de captación y ejecución de
+        instrucciones. Después de que una instrucción sea captada, es examinada
+        para determinar si incluye algún direccionamiento indirecto. Si es así,
+        los operandos requeridos se captan usando direccionamiento indirecto.
+        Tras la ejecución se puede procesar una interrupción antes de la
+        captación de la siguiente instrucción.
+      </p>
+    </div>
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">2.3.1 Ciclo Fetch-Decode-Execute</p>
+      </h2>
+      <p>
+        Procedimiento bien establecido Fases(o sub ciclos): búsqueda y ejecución
+        (cada fase tiene etapas o actividades) FASE FETCH
+      </p>
+      <li class="list-group-item"><b> Cargar la siguiente instrucción</b></li>
+      <li class="list-group-item"><b> Incrementar el secuenciador</b></li>
+      <li class="list-group-item"><b> Interpretar la Instrucción</b></li>
+      <p>
+        FASE EXECUTE
+      </p>
+      <li class="list-group-item"><b> Cargar los operandos</b></li>
+      <li class="list-group-item"><b> Ejecutar la operación</b></li>
+      <li class="list-group-item"><b> Guardar el resultado</b></li>
+      <li class="list-group-item">
+        <b> Verificar si hay solicitudes de interrupción</b>
+      </li>
+    </div>
+  </section>
+
+  <section>
+    <div class="conteiner mt-5 nt-5" align="center">
+      <h2 class="title">
+        <p style="color:#3C75C8">CPU´S INTEL</p>
+      </h2>
+      <div align="center">
+      
+      <iframe
+        src="https://docs.google.com/presentation/d/e/2PACX-1vQ8ZQtpDGbNTSlWX9lrx7uLUh1VfKP707ZwUbiKIU8efSxvXysge32liZiPcmsy_w/embed?start=false&loop=false&delayms=3000"
+        frameborder="50"
+        width="500"
+        height="230"
+        allowfullscreen="true"
+        mozallowfullscreen="true"
+        webkitallowfullscreen="true"
+              align="center"
+      ></iframe>
+          
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="conteiner mt-5 nt-5" align="center">
+      <h2 class="title">
+        <p style="color:#3C75C8">CPU'S AMD</p>
+      </h2>
+    </div>
+    <div align ="center">
+      
+    
+    <iframe
+      src="https://docs.google.com/presentation/d/e/2PACX-1vT4s4X-MCRl5MgBfCMGiaSTk3cqqnH4nfERY1ilrZGuERc3azIqqvBVojuYuFxEjg/embed?start=false&loop=false&delayms=3000"
+      frameborder="50"
+      width="500"
+      height="230"
+      allowfullscreen="true"
+      mozallowfullscreen="true"
+      webkitallowfullscreen="true"
+    ></iframe>
+      </div>
+  </section>
+</html>

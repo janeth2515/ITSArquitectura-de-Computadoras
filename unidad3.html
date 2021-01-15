@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Arquitectura de computadoras</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Inicio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="unidad1.html">Unidad 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="unidad2.html">Unidad 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="unidad3.html">Unidad 3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="unidad4.html">Unidad 4</a>
+          </li>
+        </ul>
+      </nav>
+      <div
+        class="cover d-flex justify-content-center align-items-center flex-column"
+      >
+        <h1>
+          Arquitectura de computadoras
+        </h1>
+        <p>
+          Unidad 3 Selección de componentes para ensamble de equipo de cómputo.
+        </p>
+      </div>
+    </header>
+  </body>
+  <section>
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">
+          3.1 Chipset.
+        </p>
+      </h2>
+      <p>
+        Un chipset (traducido como circuito integrado auxiliar) es el conjunto
+        de circuitos integrados diseñados con base en la arquitectura de un
+        procesador (en algunos casos, diseñados como parte integral de esa
+        arquitectura), permitiendo que ese tipo de procesadores funcionen en una
+        placa base. Sirven de puente de comunicación con el resto de componentes
+        de la placa, como son la memoria, las tarjetas de expansión, los puertos
+        USB, ratón, teclado, etc.
+      </p>
+    </div>
+    <div align ="center">
+      <img src ="https://cdn.glitch.com/4c8cc7d1-9617-4086-a6d3-711095e7111d%2Fchipset.jpg?v=1610683758751">
+    </div>
+    <div class="conteiner mt-5 nt-5">
+      <p>
+        Las placas base modernas suelen incluir dos integrados, denominados
+        puente norte y puente sur, y suelen ser los circuitos integrados más
+        grandes después de la GPU y el microprocesador. Las últimas placa base
+        carecen de puente norte, ya que los procesadores de última generación lo
+        llevan integrado. El chipset determina muchas de las características de
+        una placa base y por lo general la referencia de la misma está
+        relacionada con la del chipset. A diferencia del microcontrolador, el
+        procesador no tiene mayor funcionalidad sin el soporte de un chipset: la
+        importancia del mismo ha sido relegada a un segundo plano por las
+        estrategias de mercadotecnia.
+      </p>
+    </div>
+    <div class="conteiner mt-5 nt-5">
+      <p>
+        El Chipset es el que hace posible que la placa base funcione como eje
+        del sistema, dando soporte a varios componentes e interconectándolos de
+        forma que se comuniquen entre ellos haciendo uso de diversos buses. Es
+        uno de los pocos elementos que tiene conexión directa con el procesador,
+        gestiona la mayor parte de la información que entra y sale por el bus
+        principal del procesador, del sistema de vídeo y muchas veces de la
+        memoria RAM. En el caso de los computadores PC, es un esquema de
+        arquitectura abierta que establece modularidad: el Chipset debe tener
+        interfaces estándar para los demás dispositivos. Esto permite escoger
+        entre varios dispositivos estándar, por ejemplo en el caso de los buses
+        de expansión, algunas tarjetas madre pueden tener bus PCI-Express y
+        soportar diversos tipos de tarjetas de distintos anchos de bus (1x, 8x,
+        16x). En el caso de equipos portátiles o de marca, el chipset puede ser
+        diseñado a la medida y aunque no soporte gran variedad de tecnologías,
+        presentará alguna interfaz de dispositivo.
+      </p>
+    </div>
+    <div class="conteiner mt-5 nt-5">
+      <p>
+        La terminología de los integrados ha cambiado desde que se creó el
+        concepto del chipset a principio de los años 1990, pero todavía existe
+        equivalencia haciendo algunas aclaraciones: El puente norte,
+        northbridge, MCH (memory controller hub) o GMCH (graphic MCH), se usa
+        como puente de enlace entre el microprocesador y la memoria. Controla
+        las funciones de acceso hacia y entre el microprocesador, la memoria
+        RAM, el puerto gráfico AGP o el PCI-Express de gráficos, y las
+        comunicaciones con el puente sur. Al principio tenía también el control
+        de PCI, pero esa funcionalidad ha pasado al puente sur. El puente sur,
+        southbridge o ICH (input controller hub), controla los dispositivos
+        asociados como son la controladora de discos IDE, puertos USB, FireWire,
+        SATA, RAID, ranuras PCI, ranura AMR, ranura CNR, puertos infrarrojos,
+        disquetera, LAN, PCI-Express 1x y una larga lista de todos los elementos
+        que podamos imaginar integrados en la placa madre. Es el encargado de
+        comunicar el procesador con el resto de los periféricos. En la
+        actualidad los principales fabricantes de chipsets son AMD, ATI
+        Technologies (comprada en 2006 por AMD), Intel, NVIDIA, Silicon
+        Integrated Systems y VIA Technologies.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">
+          3.2 Aplicaciones.
+        </p>
+      </h2>
+      <p>
+        Las computadoras electrónicas modernas son una herramienta esencial en
+        muchas áreas: industria, gobierno, ciencia, educación,…, en realidad en
+        casi todos los campos de nuestras vidas. El papel que juegan los
+        dispositivos periféricos de la computadora es esencial; sin tales
+        dispositivos ésta no sería totalmente útil. A través de los dispositivos
+        periféricos podemos introducir a la computadora datos que nos sea útiles
+        para la resolución de algún problema y por consiguiente obtener el
+        resultado de dichas operaciones, es decir; poder comunicarnos con la
+        computadora. La computadora necesita de entradas para poder generar
+        salidas y éstas se dan a través de dos tipos de dispositivos periféricos
+        existentes:
+      </p>
+      <li class="list-group-item">Dispositivos periféricos de entrada.</li>
+
+      <li class="list-group-item">Dispositivos periféricos de salida.</li>
+      <p>
+        La serie MVP es la familia más versátil de fuentes de alimentación de
+        potencia media que utiliza componentes magnéticos de SMD y convertidos
+        DC-DC internos, combinados con módulos PFC, que pueden ser configurables
+        desde 1 hasta 10 tensiones de salida con valores entre 2 y 60 v. tiene
+        todas las homologaciones de seguridad necesarias y es un producto
+        marcado “CE”.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">
+          3.3 Ambientes de servicio.
+        </p>
+      </h2>
+      <p>
+        El negocio de proveer servicios de datos es mucho más complejo que la
+        forma en la que se dan los tradicionales servicios, que con frecuencia
+        se terminan involucrando o necesitando la colaboración de terceras
+        empresas.
+      </p>
+
+      <li class="list-group-item">Desarrollo de nuevos mercados y productos</li>
+
+      <li class="list-group-item">Adquisición y administración de clientes</li>
+
+      <li class="list-group-item">
+        Proveer y desarrollar servicios para la red
+      </li>
+
+      <li class="list-group-item">Administración del negocio</li>
+    </div>
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">
+          Negocios
+        </p>
+      </h2>
+      <p>
+        Definitivamente, la tecnología en general ha sido la causa principal y
+        la acción más directa para la transformación del trabajo de las
+        organizaciones en la posguerra del siglo XX. Tanto los bienes de capital
+        «duros» (computadores, teléfonos, videos, facsímiles, grabadoras, etc.),
+        como los programas y sistemas de información y comunicación en general,
+        han incrementado enormemente la productividad y eficiencia de las
+        organizaciones. Tenemos como ejemplos los siguientes: bases de datos en
+        redes de todo orden y topología, sistemas de reservaciones en
+        aerolíneas, sistemas de contabilidad y nóminas, archivos clínicos en
+        centros de salud, sistemas de conmutación electrónica y un sin número de
+        otras aplicaciones a procesos administrativos.
+      </p>
+    </div>
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">
+          Industria
+        </p>
+      </h2>
+      <p>
+        La industrialización de los servicios de tecnología de información va a
+        redefinir el mercado en términos de como las organizaciones evalúan,
+        compran y seleccionan los servicios y como los vendedores desarrollan y
+        establecen precios de los servicios. Para lograr esta estandarización,
+        se requiere un enfoque hacia las soluciones genéricas y esto debe ser
+        responsabilidad de los proveedores, que deben de desarrollar, operar y
+        administrar el resultado de estos genéricos de TI. Aunque los servicios
+        de TI están en proceso de madurez, la madurez de la industria se ha
+        incrementado en aspectos evidentes, como la forma en que los servicios
+        son implementados y administrados.
+      </p>
+    </div>
+    <div class="conteiner mt-5 nt-5">
+      <h2 class="title">
+        <p style="color:#3C75C8">
+          Comercio Electronico
+        </p>
+      </h2>
+      <p>
+        El desarrollo de estas tecnologías y de las telecomunicaciones ha hecho
+        que los intercambios de datos crezcan a niveles extraordinarios,
+        simplificándose cada vez más y creando nuevas formas de comercio, y en
+        este marco se desarrolla el Comercio Electrónico. Se considera “Comercio
+        Electrónico” al conjunto de aquellas transacciones comerciales y
+        financieras realizadas a través del procesamiento y la transmisión de
+        información, incluyendo texto, sonido e imagen.
+      </p>
+    </div>
+  </section>
+</html>
